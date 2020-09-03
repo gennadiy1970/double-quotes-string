@@ -1,2 +1,3 @@
 # double-quotes-string
-splitting a string into parts in double quotes
+
+The service changes a code from the editor to a string in double quotes.
