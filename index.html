@@ -5,37 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Get String</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
   </head>
   <body>
-    <h1>Get a formatted javascript string from the editor code</h1>
-    <div class="container">
-      <div class="wrp">
-        <h2>Code</h2>
-        <form id="code">
-          <div class="controls">
-            <button type="submit">Get string</button>
-            <button type="reset">Reset</button>
-          </div>
-          <textarea
-            class="field"
-            name="field"
-            id="field"
-            rows="10"
-            placeholder="Past your code here"
-          ></textarea>
-        </form>
-      </div>
-      <div class="wrp">
-        <h2>Ready string</h2>
-        <div class="result" id="result" tabindex="1" ></div>
-        <!-- <div class="controls">
+    <main>
+      <h1>Get double quotes javascript string</h1>
+      <div class="container">
+        <div class="wrp">
+          <h2>Code</h2>
+          <form id="code">
+            <div class="controls">
+              <button type="submit">Get string</button>
+              <button type="reset">Reset</button>
+            </div>
+            <textarea
+              class="field"
+              name="field"
+              id="field"
+              rows="10"
+              placeholder="Past your code here"
+            ></textarea>
+          </form>
+        </div>
+        <div class="wrp">
+          <h2>Ready string</h2>
+          <div class="result" id="result" tabindex="1"></div>
+          <!-- <div class="controls">
           <button id="copy" type="button">Copy</button>
 
         </div> -->
+        </div>
       </div>
-    </div>
+    </main>
     <footer>
-      <a href="https://github.com/gennadiy1970/double-quotes-string"><p class="copyright">&copy; Gorbulin Gennadiy.   <img src="./img/logoGGM.svg" alt="Logo of Gorbulin Gennadiy" width="24" height="24"></p></a>
+      <a href="https://github.com/gennadiy1970/double-quotes-string"
+        ><p class="copyright">
+          &copy; Gorbulin Gennadiy.
+          <img
+            src="./img/logoGGM.svg"
+            alt="Logo of Gorbulin Gennadiy"
+            width="24"
+            height="24"
+          /></p
+      ></a>
     </footer>
     <script type="module" src="js/app.js"></script>
   </body>

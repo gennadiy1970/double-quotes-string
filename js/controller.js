@@ -12,9 +12,10 @@ function getCode(event) {
   refs.result.textContent = res;
 }
 
-// function getCopy(event) {
-//   event.preventDefault();
-// }
+function clearCode(event) {
+  event.preventDefault();
+  refs.result.textContent = "";
+}
 
 refs.form.addEventListener('submit', getCode)
-// refs.form.addEventListener('click', getCopy)
+refs.form.addEventListener('reset', clearCode)

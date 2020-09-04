@@ -1,3 +1,11 @@
+:root {
+  --footer-height: 64px;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: sans-serif;
   color: navy;
@@ -59,16 +67,30 @@ button[type="reset"] {
   box-sizing: border-box;
   cursor: text;
   box-shadow: inset 2px 2px 6px 3px hsla(0, 0%, 0%, .2);
+  -webkit-user-select: all;  /* Chrome all / Safari all */
+  -moz-user-select: all;     /* Firefox all */
+  -ms-user-select: all;      /* IE 10+ */
+  user-select: all;          /* Likely future */   
 }
 h1, h2 {
   text-align: center;
 }
+h1 {
+  font-size: 24px;
+  padding: 1rem;
+}
+h2 {
+  font-size: 22px;
+  padding: .8rem;
+}
+main {
+  min-height: calc(100vh - var(--footer-height));
+}
 
 footer {
-  position: fixed;
-  bottom: 0px;
-  left: 50%;
-
+  min-height: var(--footer-height);
+  line-height: var(--footer-height);
+  background-color: hsla(0, 0%, 0%, .8);
 }
 
 .copyright {
@@ -79,6 +101,7 @@ footer {
 
 a {
   text-decoration: none;
+  color: #fff;
 }
 
 img {
